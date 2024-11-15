@@ -1,5 +1,5 @@
 ---
-- name: Update all Linux servers with Nala
+- name: Update all debian based VMs with Nala
   hosts: VM
   become: yes
   tasks:
