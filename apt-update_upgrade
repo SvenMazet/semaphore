@@ -2,7 +2,7 @@
 - hosts: VM
   become: true
   tasks:
-    - name: apt update && apt upgrade
+    - name: apt update and apt upgrade
       apt:
         upgrade: yes
         update_cache: yes
