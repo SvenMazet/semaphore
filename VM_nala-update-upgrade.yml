@@ -16,3 +16,7 @@
     - name: Upgrade all packages
       command: nala upgrade -y
       when: ansible_os_family == "Debian"
+      
+    - name: Reboot if necessary 
+      reboot: 
+        when: ansible_facts['os_family'] == 'Debian'      
