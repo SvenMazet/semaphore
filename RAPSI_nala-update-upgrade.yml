@@ -1,5 +1,5 @@
 ---
-- name: Update all Linux servers with Nala
+- name: Update all Raspberry Pi devices with Nala
   hosts: RASPI
   become: yes
   tasks:
