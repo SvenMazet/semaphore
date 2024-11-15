@@ -1,0 +1,17 @@
+---
+- name: Update Proxmox VE
+  hosts: proxmox
+  become: yes
+  tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+
+    - name: Upgrade all packages
+      apt:
+        upgrade: dist
+
+    - name: Ensure Proxmox VE is up-to-date
+      apt:
+        name: proxmox-ve
+        state: latest
