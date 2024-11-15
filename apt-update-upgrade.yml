@@ -1,5 +1,5 @@
 ---
-- hosts: VM
+- hosts: RASPI
   become: true
   tasks:
     - name: apt update and apt upgrade
