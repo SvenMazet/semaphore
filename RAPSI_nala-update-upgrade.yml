@@ -3,11 +3,11 @@
   hosts: RASPI
   become: yes
   tasks:
-    - name: Install Nala
-      apt:
-        name: nala
-        state: present
-      when: ansible_os_family == "Debian"
+ #   - name: Install Nala
+ #     apt:
+ #       name: nala
+ #       state: present
+ #     when: ansible_os_family == "Debian"
 
     - name: Update package list
       command: nala update
