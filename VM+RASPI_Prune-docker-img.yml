@@ -1,6 +1,6 @@
 ---
 - name: Remove unused docker images
-  hosts: VM, RASPI
+  hosts: DOCKER
   become: true
   tasks:
     - name: Remove unused docker images
