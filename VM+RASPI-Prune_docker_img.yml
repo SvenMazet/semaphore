@@ -1,0 +1,12 @@
+---
+- name: Remove unused docker images
+  hosts: VM, RASPI
+  become: true
+  tasks:
+    - name: Remove unused docker images
+      shell: docker image prune
+      register: result
+
+    - name: Show results
+      debug:
+        var: result.stdout
