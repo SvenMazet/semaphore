@@ -1,6 +1,6 @@
 ---
 - name: Reboot Ubuntu servers if necessary
-  hosts: all
+  hosts: VM
   become: true
   tasks:
     - name: Check if reboot is required
